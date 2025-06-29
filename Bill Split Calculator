@@ -1,0 +1,12 @@
+print("Bill Split Calculator")
+
+billAmt = float(input("Enter bill amount: "))
+tipPercentage = float(input("Enter tip percentage: "))
+noOfSplits = int(input("Enter number of splits: "))
+
+tipAmt = billAmt * (tipPercentage / 100)
+totalBill = tipAmt + billAmt
+splitAmount = totalBill / noOfSplits
+
+print(f"Total bill: ₹{totalBill:.2f}")
+print(f"Each person pays: ₹{splitAmount:.2f}")
