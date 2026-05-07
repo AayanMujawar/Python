@@ -1,0 +1,6 @@
+list1=(1,2,3,4,5,6,7,8)
+list2=("Aayan","jiya","Roshani","stan","eminem")
+print(list1.count(4))
+print(list1.index(4))
+list1.reverse()
+print(list1)
