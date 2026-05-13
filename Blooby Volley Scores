@@ -1,0 +1,24 @@
+t = int(input())
+
+while t > 0:
+    n = int(input())
+    s = input()
+    cA=0
+    cB=0
+    result=[]
+    # Your code goes here
+    isServer = 'A'
+    i=0
+    for i in range (n):
+        if isServer == 'A' and s[i] == 'A':
+            cA +=1
+        elif isServer == 'A' and s[i] == 'B':
+            isServer = 'B'
+        elif isServer == 'B' and s[i] == 'B':
+            cB += 1
+        else:
+            isServer = 'A'
+        
+  
+    print(f"{cA} {cB}")
+    t -= 1
