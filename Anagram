@@ -1,0 +1,16 @@
+def isAnagram(s, t):
+
+    if len(s) != len(t):
+        return "NO"
+
+    hash_map = [0] * 130
+
+    for ch in s:
+        hash_map[ord(ch)] += 1
+
+    for ch in t:
+        if hash_map[ord(ch)] == 0:
+            return "NO"
+        hash_map[ord(ch)] -= 1
+
+    return "YES"
