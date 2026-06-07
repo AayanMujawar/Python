@@ -1,0 +1,13 @@
+# cook your dish here
+N , T = map(int , input().split())
+
+arr = list(map(int , input().split()))
+found = False
+for ele in arr:
+    if T == ele:
+        found = True
+if found:
+    print("Yes")
+else:
+    print("No")
+
