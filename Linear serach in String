@@ -1,0 +1,7 @@
+s = input()
+T = input()
+
+for i in range(len(s)):
+    if s[i] == T:
+        print(i)
+        break
