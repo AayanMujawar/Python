@@ -1,0 +1,21 @@
+# cook your dish here
+T = int(input())
+arr =[]
+while(T > 0):
+    y,z = map(int , input().split())
+    arr.append(y)
+    arr.append(z)
+    T = T-1
+    
+a , b =map(int , input().split())
+flag = False
+for i in range(0,len(arr),2):
+    if arr[i]==a or arr[i+1]==a:
+        if arr[i]==b or arr[i+1]==b:
+            flag = True
+            
+if(flag):
+    print("Yes")
+else:
+    print("No")
+   
