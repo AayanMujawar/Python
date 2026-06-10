@@ -1,0 +1,16 @@
+# cook your dish here
+s , c , i = input().split(" ")
+i = int(i)
+flag = 0
+for j in range(len(s)):
+    if s[j] == c:
+        i = i-1
+        if i==0:
+        
+            flag = 1
+            break
+        
+if flag == 1:
+    print(j)
+else:
+    print(-1)
