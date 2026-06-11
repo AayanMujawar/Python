@@ -1,0 +1,13 @@
+# cook your dish here
+n = int(input())
+arr = list(map(int , input().split()))
+
+small = float('inf')
+large = float('-inf')
+
+for i in range(len(arr)):
+    if arr[i] < small:
+        small = arr[i]
+    if arr[i] > large:
+        large = arr[i]
+print(int(small) , int(large))
