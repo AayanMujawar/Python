@@ -1,0 +1,14 @@
+# cook your dish here
+n = int(input())
+pairs = []
+while n>0:
+    pair = list(map(int , input().split()))
+    pairs.append(pair)
+    n -= 1
+p,q = map(int , input().split())
+
+for a,b in pairs:
+    su = a+b
+    mul = a*b
+    if su >= p and su <=q and mul >= p and mul <=q:
+        print(a , b)
